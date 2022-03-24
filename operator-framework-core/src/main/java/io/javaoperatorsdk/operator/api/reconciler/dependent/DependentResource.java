@@ -15,8 +15,9 @@ public interface DependentResource<R, P extends HasMetadata> {
   ReconcileResult<R> reconcile(P primary, Context<P> context);
 
   /**
-   * The intention with get resource is to return the actual state of the resource. Usually from a local cache,
-   * what was updated after the reconciliation, or typically from the event source that caches the resources.
+   * The intention with get resource is to return the actual state of the resource. Usually from a
+   * local cache, what was updated after the reconciliation, or typically from the event source that
+   * caches the resources.
    *
    * @param primaryResource associated
    * @return the reconciled resource
